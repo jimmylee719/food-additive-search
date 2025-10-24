@@ -1,10 +1,40 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-TW"> <!-- [EDIT] 更改為 zh-TW 更精確 -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>台灣食品添加物快速查詢 (單頁版)</title>
-    <meta name="description" content="快速查詢台灣衛福部食藥署 (TFDA) 所表列之合法食品添加物。">
+    <title>台灣食品添加物快速查詢 | Taiwan Food Additive Search</title> <!-- [EDIT] SEO 雙語標題 -->
+    
+    <!-- [EDIT] SEO 雙語描述 -->
+    <meta name="description" content="快速查詢台灣衛生福利部(TFDA)核准的食品添加物。即時搜尋中文、英文名稱、E編號或類別。An instant search tool for Taiwan's (TFDA) approved food additives. Search by Chinese name, English name, E-number, or category.">
+    
+    <!-- [NEW] SEO 關鍵字 -->
+    <meta name="keywords" content="食品添加物, 台灣, 查詢, TFDA, 食藥署, E編號, 防腐劑, 甜味劑, 色素, food additives, Taiwan, search, query, E-number, preservatives, sweeteners, coloring, food safety, TFDA approved list">
+
+    <!-- [NEW] SEO: Open Graph (社群媒體分享) -->
+    <meta property="og:title" content="台灣食品添加物快速查詢 | Taiwan Food Additive Search">
+    <meta property="og:description" content="快速查詢台灣 TFDA 核准的食品添加物。Search Taiwan's (TFDA) approved food additives instantly.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="zh_TW">
+    <meta property="og:locale:alternate" content="en_US">
+    <!-- 部署後，您可以將 placehold 換成真實的網站截圖 -->
+    <meta property="og:image" content="https://placehold.co/1200x630/005a9c/ffffff?text=Taiwan%0AFood%0AAdditive%0ASearch&font=noto-sans-tc">
+    <!-- <meta property="og:url" content="https://your-vercel-url.app/"> --> <!-- 部署後請取消註解並填入您的網址 -->
+
+    <!-- [NEW] SEO: Twitter Card (推特分享) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- <meta name="twitter:url" content="https://your-vercel-url.app/"> --> <!-- 部署後請取消註解並填入您的網址 -->
+    <meta name="twitter:title" content="台灣食品添加物快速查詢 | Taiwan Food Additive Search">
+    <meta name="twitter:description" content="快速查詢台灣 TFDA 核准的食品添加物。Search Taiwan's (TFDA) approved food additives instantly.">
+    <meta name="twitter:image" content="https://placehold.co/1200x630/005a9c/ffffff?text=Taiwan%0AFood%0AAdditive%0ASearch&font=noto-sans-tc">
+    
+    <!-- [NEW] SEO: 聲明中英內容 -->
+    <meta http-equiv="Content-Language" content="zh-TW, en">
+    <!-- 部署後請取消註解並填入您的網址 -->
+    <!-- <link rel="alternate" hreflang="zh-TW" href="https://your-vercel-url.app/"> -->
+    <!-- <link rel="alternate" hreflang="en" href="https://your-vercel-url.app/"> -->
+    <!-- <link rel="alternate" hreflang="x-default" href="https://your-vercel-url.app/"> -->
+
     <!-- 網頁圖示 (Favicon) -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧪</text></svg>">
     
@@ -463,11 +493,21 @@
             <!-- 頁面 2: 關於本站 (預設隱藏) -->
             <section id="page-about" class="page-content">
                 <div class="page-static-content">
-                    <h2>關於本站</h2>
+                    <h2>關於本站 / About This Site</h2>
+                    
+                    <!-- [EDIT] 新增 H3 標題 -->
+                    <h3>中文說明</h3>
                     <p>本網站旨在提供一個快速、簡易的介面，用以查詢台灣衛福部食藥署 (TFDA) 所表列之合法食品添加物。</p>
                     <p>資料庫內容根據 TFDA 官方公告之「食品添加物使用範圍及限量暨規格標準」建立，並致力於保持最新狀態。</p>
-                    <p>若您對本站有任何疑問、建議，或發現資料疏漏，歡迎隨時與我聯繫。</p>
+                    <p>若您對本站有 any 疑問、建議，或發現資料疏漏，歡迎隨時與我聯繫。</p>
                     <p>聯絡信箱：<a href="mailto:skadoosh.ai.lab@gmail.com">skadoosh.ai.lab@gmail.com</a></p>
+
+                    <!-- [NEW] 新增英文版介紹 -->
+                    <h3 style="margin-top: 2rem;">English Introduction</h3>
+                    <p>This website provides a simple and fast interface to search for legal food additives listed by the Taiwan Food and Drug Administration (TFDA).</p>
+                    <p>The database is built upon the official "Standards for Specification, Scope, Application and Limitation of Food Additives" published by the TFDA and is intended to be kept up-to-date.</p>
+                    <p>If you have any questions, suggestions, or find any discrepancies in the data, please feel free to contact me.</p>
+                    <p>Contact Email: <a href="mailto:skadoosh.ai.lab@gmail.com">skadoosh.ai.lab@gmail.com</a></p>
                 </div>
             </section>
 
@@ -479,7 +519,7 @@
                     <h3>資訊收集與使用</h3>
                     <p>本網站是一個靜態查詢網站。我們不要求您註冊帳號，也不會主動收集任何可用於識別您個人身份的資訊 (例如姓名、地址、電話號碼)。您的所有查詢操作均在您的本機瀏覽器上完成。</p>
                     <h3>日誌數據 (Log Data)</h3>
-                    <p>如同許多網站，我們的網站寄存服務 (例如 Netlify, Vercel, GitHub Pages) 可能會收集標準的訪客日誌數據。這些資訊可能包括您的 IP 位址、瀏覽器類型、造訪頁面、造訪時間與日期等。這些資訊僅用於網站流量分析及維護網站安全，不會用於識別個人身份。</p>
+                    <p>如同許多網站，我們的網站寄存服務 (例如 Netlify, Vercel, GitHub Pages) 可能會收集標準的訪客日logs數據。這些資訊可能包括您的 IP 位址、瀏覽器類型、造訪頁面、造訪時間與日期等。這些資訊僅用於網站流量分析及維護網站安全，不會用於識別個人身份。</p>
                     <h3>Cookies</h3>
                     <p>本網站目前不使用 Cookies 來儲存訪客偏好。然而，我們可能會在未來使用 Cookies 以改善使用者體驗。</p>
                     <h3>第三方廣告 (Google AdSense)</h3>
@@ -7797,15 +7837,14 @@
                     const card = document.createElement('div');
                     card.className = 'result-card';
                     
-                    // [EDITED] 更新卡片內容以顯示 new scope 和 restrictions
-                    // 同時處理 "nan" 字串，若為 "nan" 或空值，則顯示 "未提供"
+                    // [FIX] 修正了將 HTML 註解寫入 JS 樣板字面值所造成的語法錯誤
                     card.innerHTML = `
                         <h4>${item.name_zh}</h4>
                         <p>${item.name_en}</p>
                         <span>${item.category}</span>
                         <div class="details">
                             <p><strong>使用範圍：</strong> ${item.scope || '未提供'}</p>
-                            <p><strong>使用限制：</strong> ${(item.restrictions && item.restrictions.toLowerCase() !== 'nan') ? item.restrictions : '未提供'}</Harness}</p>
+                            <p><strong>使用限制：</strong> ${(item.restrictions && item.restrictions.toLowerCase() !== 'nan') ? item.restrictions : '未提供'}</p>
                         </div>
                     `;
                     resultsContainer.appendChild(card);
@@ -7887,6 +7926,4 @@
     </script>
 </body>
 </html>
-
-
 
